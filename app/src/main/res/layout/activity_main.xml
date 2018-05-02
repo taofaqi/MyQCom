@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ttpai.myqcom.ui.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@mipmap/notice_01"
+        android:gravity="center">
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="1dp"
+            android:background="@color/lighter_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="公告"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="1dp"
+            android:background="@color/lighter_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_content_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_title"
+        android:background="@color/lighter_gray"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/main_member_num"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/notice_04"
+            android:gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:text="会员数" />
+
+        <TextView
+            android:id="@+id/main_member_look"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/notice_06"
+            android:gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:text="会员查看" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_content_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_content_top"
+        android:background="@color/lighter_gray"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/main_ranking"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/notice_11"
+            android:gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:text="排行榜" />
+
+        <TextView
+            android:id="@+id/main_me"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/notice_13"
+            android:gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:text="我的" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/login_login_btn"
+        android:background="@mipmap/footbg_02"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="10dp"
+        android:text="尊敬的用户您好,本页面绝对保障您的\n信息安全，请放心使用！"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</RelativeLayout>
