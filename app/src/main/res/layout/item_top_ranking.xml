@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="@drawable/app_bule_gradient"
+    android:gravity="bottom"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_white_left">
+
+        <ImageView
+            android:id="@+id/rank_title_second_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/ranking_03" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/rank_second_user_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/rank_title_second_img"
+            android:layout_centerHorizontal="true"
+            fresco:roundAsCircle="true" />
+
+        <ImageView
+            android:id="@+id/rank_second_title_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rank_second_user_icon"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ranking_21" />
+
+        <TextView
+            android:id="@+id/rank_second_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rank_second_title_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="不一样的名称" />
+
+        <TextView
+            android:id="@+id/rank_second_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rank_second_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="139****6565" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/rankingbg_03" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_white_top">
+
+        <ImageView
+            android:id="@+id/rank_title_first_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/ranking_03" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/rank_first_user_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/rank_title_first_img"
+            android:layout_centerHorizontal="true"
+            fresco:roundAsCircle="true" />
+
+        <ImageView
+            android:id="@+id/rank_first_title_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rank_first_user_icon"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ranking_21" />
+
+        <TextView
+            android:id="@+id/rank_first_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rank_first_title_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="不一样的名称" />
+
+        <TextView
+            android:id="@+id/rank_first_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rank_first_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="139****6565" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_white_right">
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/rankingbg_05" />
+
+        <ImageView
+            android:id="@+id/rank_title_third_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/ranking_03" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/rank_third_user_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/rank_title_third_img"
+            android:layout_centerHorizontal="true"
+            fresco:roundAsCircle="true" />
+
+        <ImageView
+            android:id="@+id/rank_third_title_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rank_third_user_icon"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ranking_21" />
+
+        <TextView
+            android:id="@+id/rank_third_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rank_third_title_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="不一样的名称" />
+
+        <TextView
+            android:id="@+id/rank_third_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rank_third_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="139****6565" />
+
+    </RelativeLayout>
+
+</LinearLayout>
