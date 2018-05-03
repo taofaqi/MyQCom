@@ -19,6 +19,7 @@
     </style>
 
     <style name="login_edittext_style">
+        <item name="android:maxLines">1</item>
         <item name="android:textSize">13sp</item>
         <item name="android:textCursorDrawable">@drawable/edittext_cursor_drawable</item>
         <item name="android:paddingLeft">5dp</item>
