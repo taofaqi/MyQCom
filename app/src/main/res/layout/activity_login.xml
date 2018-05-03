@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.ttpai.myqcom.ui.LoginActivity">
+    tools:context="com.ttpai.myqcom.ui.activity.LoginActivity">
 
     <TextView
         android:id="@+id/login_title"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         android:gravity="center"
         android:text="欢迎访问Q通讯"
         android:textColor="@color/app_bg"
@@ -25,6 +25,7 @@
         android:layout_below="@id/login_title"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/bg_draker_gary"
         android:orientation="vertical">
 
@@ -104,12 +105,11 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_alignParentBottom="true"
-        android:layout_below="@id/login_login_btn"
         android:background="@mipmap/footbg_02"
         android:gravity="center_horizontal|bottom"
-        android:paddingBottom="10dp"
+        android:paddingBottom="15dp"
         android:text="尊敬的用户您好,本页面绝对保障您的\n信息安全，请放心使用！"
         android:textColor="@color/white"
         android:textSize="14sp" />

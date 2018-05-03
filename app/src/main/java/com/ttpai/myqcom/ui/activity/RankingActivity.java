@@ -1,11 +1,12 @@
-package com.ttpai.myqcom.ui;
+package com.ttpai.myqcom.ui.activity;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.ttpai.myqcom.R;
+import com.ttpai.myqcom.bean.RankingBean;
+import com.ttpai.myqcom.ui.adapter.RankingAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +14,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class RankingActivity extends AppCompatActivity {
+public class RankingActivity extends BaseActivity {
 
     @BindView(R.id.ranking_recyclerView)
     RecyclerView mRecyclerView;
@@ -29,7 +30,9 @@ public class RankingActivity extends AppCompatActivity {
         initDatas();
         rankingAdapter = new RankingAdapter(rankingList, this);
         mRecyclerView.setAdapter(rankingAdapter);
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        mRecyclerView.setLayoutManager(layoutManager);
     }
 
     private void initDatas() {

@@ -1,4 +1,4 @@
-package com.ttpai.myqcom.ui;
+package com.ttpai.myqcom.ui.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -7,6 +7,10 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import com.ttpai.myqcom.R;
+import com.ttpai.myqcom.ui.viewholder.NormalViewHolder;
+import com.ttpai.myqcom.bean.RankingBean;
+import com.ttpai.myqcom.ui.viewholder.TopViewHolder;
+import com.ttpai.myqcom.util.Utils;
 
 import java.util.List;
 
@@ -48,6 +52,9 @@ public class RankingAdapter extends RecyclerView.Adapter {
         if (holder instanceof TopViewHolder) {
             ((TopViewHolder) holder).bind((List<RankingBean>) rankingBeanList.get(position));
         } else if (holder instanceof NormalViewHolder) {
+            if (position == rankingBeanList.size()){
+                ((RankingBean) rankingBeanList.get(position)).showSplitLine = false;
+            }
             ((NormalViewHolder) holder).bind((RankingBean) rankingBeanList.get(position));
         }
     }

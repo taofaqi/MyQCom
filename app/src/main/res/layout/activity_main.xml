@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ttpai.myqcom.ui.MainActivity">
+    tools:context="com.ttpai.myqcom.ui.activity.MainActivity">
 
     <LinearLayout
         android:id="@+id/main_title"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="120dp"
         android:background="@mipmap/notice_01"
         android:gravity="center">
 
@@ -109,10 +109,9 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_alignParentBottom="true"
-        android:layout_below="@id/login_login_btn"
         android:background="@mipmap/footbg_02"
         android:gravity="center_horizontal|bottom"
-        android:paddingBottom="10dp"
+        android:paddingBottom="15dp"
         android:text="尊敬的用户您好,本页面绝对保障您的\n信息安全，请放心使用！"
         android:textColor="@color/white"
         android:textSize="14sp" />

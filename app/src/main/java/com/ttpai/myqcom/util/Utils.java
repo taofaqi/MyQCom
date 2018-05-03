@@ -1,4 +1,4 @@
-package com.ttpai.myqcom.ui;
+package com.ttpai.myqcom.util;
 
 import java.util.Collection;
 
