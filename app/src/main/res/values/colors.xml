@@ -9,6 +9,6 @@
     <color name="lighter_gray">#dddddd</color>
     <color name="darker_gray">#aaaaaa</color>
 
-    <color name="app_start_color">#00BDFA</color>
-    <color name="app_end_color">#186BDD</color>
+    <color name="app_end_color">#00BDFA</color>
+    <color name="app_start_color">#186BDD</color>
 </resources>

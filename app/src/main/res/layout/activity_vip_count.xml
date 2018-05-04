@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bule_gradient"
+    tools:context="com.ttpai.myqcom.ui.activity.VipCountActivity">
+
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_white_circle">
+
+        <TextView
+            android:id="@+id/vip_count_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:text="当前会员数共"
+            android:textColor="@color/darker_gray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/vip_count_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vip_count_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="2323223"
+            android:textColor="@color/app_end_color"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

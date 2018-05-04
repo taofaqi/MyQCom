@@ -6,4 +6,5 @@ package com.ttpai.myqcom.util;
 
 public class Const {
     public static boolean isDebug = true;
+    public static final int REQUEST_COED = 0x001;
 }
