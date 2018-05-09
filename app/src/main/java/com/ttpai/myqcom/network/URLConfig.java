@@ -5,5 +5,10 @@ package com.ttpai.myqcom.network;
  */
 
 public class URLConfig {
-    public static final String zhihu_url = "api/4/news/latest";
+
+    public static final String login_url = "Login.ashx";
+    public static final String getRanking_url = "GetRanking.ashx";
+
+
+//    public static final String zhihu_url = "api/4/news/latest";
 }

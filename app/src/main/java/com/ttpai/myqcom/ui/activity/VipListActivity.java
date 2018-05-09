@@ -50,22 +50,22 @@ public class VipListActivity extends BaseActivity {
 
     private void initDatas() {
 
-        RetrofitFactory.getInstence().API()
-                .getZhihu()
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new BaseObserver<News>() {
-                    @Override
-                    protected void onSuccees(News news) throws Exception {
-                        Log.e("------", news.toString());
-                        Toast.makeText(VipListActivity.this, news.getStories().get(0).getTitle(), Toast.LENGTH_SHORT).show();
-                    }
-
-                    @Override
-                    protected void onFailure(Throwable e, boolean isNetWorkError) throws Exception {
-
-                    }
-                });
+//        RetrofitFactory.getInstence().API()
+//                .getZhihu()
+//                .subscribeOn(Schedulers.io())
+//                .observeOn(AndroidSchedulers.mainThread())
+//                .subscribe(new BaseObserver<News>() {
+//                    @Override
+//                    protected void onSuccees(News news) throws Exception {
+//                        Log.e("------", news.toString());
+//                        Toast.makeText(VipListActivity.this, news.getStories().get(0).getTitle(), Toast.LENGTH_SHORT).show();
+//                    }
+//
+//                    @Override
+//                    protected void onFailure(Throwable e, boolean isNetWorkError) throws Exception {
+//
+//                    }
+//                });
 
         vipLlist = new ArrayList<>();
         vipLlist.add(new VipListBean());
